@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+h1{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: .9rem;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    color: #D2DBDB;
+}
+
+h2{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: .9rem;
+    text-transform: uppercase;
+    line-height: 3rem
+}
+
+a{
+    font-size: 12px;
+    line-height: 3rem;
+    color: #B75E28;
+}
+
+a:hover{
+    filter: drop-shadow(0px 0px 3px #889191);
+}
+
+
+
+.homePage{
+    display: flex;
+    min-height: 100vh;
+    height:100%;
+}
+
+
+
+
+.sideText{
+
+    padding-left: 10px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.logo{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.sideContent{   
+padding: 35px;
+padding-bottom: 0px;
+    background-color: #D2DBDB;
+}
+
+.sideBar{
+ 
+    display: flex;
+    border-right: solid;
+    border-color: #221F26;
+    border-width: 1px;
+    max-width: 450px;
+    min-width: 450px;
+    width: 450px;
+    min-height: 100vh;
+}
+
+.nameBar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: solid;
+    border-color: #221F26;
+    border-width: 1px;
+    background-color: #6E888B;
+    min-width: 48px;
+    width: 48px;
+    height:auto;
+    filter: drop-shadow(7px 0px 3px #B0B7B7);
+
+}
+
+.logo2{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+
+
+}
+
+.logogroup{
+    width: 298px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 5px;
+    justify-content: space-around;
+}
+
+.rightBar{
+
+    display:table-column;
+    width: 100vw;
+    justify-items: end;
+    
+}
+
+.homebuttonRow{
+    display: flex;
+
+
+    flex-direction: row;
+
+    justify-content: center;
+
+
+    align-items: center;
+}
+
+.HPbutton{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+
+    padding: 10px;
+    margin: 10px;
+
+
+    text-align: center;
+}
+.SocialLink{
+padding-top: 10px;
+padding-bottom: 5px;
+display: flex;
+align-items: center;
+justify-content: right;
+}
+
+img.SL {
+    padding-right:10px;
+}
+.content {
+
+}
+
+.row {
+
+    display: flex;
+
+
+    flex-direction: row;
+flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+img.HB {
+    max-width:90%;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+
