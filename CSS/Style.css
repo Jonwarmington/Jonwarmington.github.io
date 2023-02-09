@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+img.logo {
+    width: 25vh;
+
+}
+
 h1 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.33rem;
@@ -28,16 +33,11 @@ a:hover {
     filter: drop-shadow(0px 0px 3px #889191);
 }
 
-
-
 .homePage {
     display: flex;
     min-height: 100vh;
     height: 100%;
 }
-
-
-
 
 .sideText {
 
@@ -74,7 +74,6 @@ a:hover {
 }
 
 .nameBar {
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -131,20 +130,6 @@ a:hover {
     align-items: center;
 }
 
-.HPbutton {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
-
-    padding: 10px;
-    margin: 10px;
-
-
-    text-align: center;
-}
-
 .SocialLink {
     padding-top: 10px;
     padding-bottom: 5px;
@@ -165,7 +150,7 @@ img.SL {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
+    margin-top: 30px;
 
 }
 
@@ -175,34 +160,35 @@ img.HB {
     padding-left: 5px;
 }
 
+.desktopHP{
+    display: unset;
+}
+.mobileHP{
+    display: none;
+}
 
-@media only screen and (max-width: 480px) {
+
+
+@media only screen and (max-width: 1330px) {
+
+
 
     h1 {
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-size: 1rem;
-        letter-spacing: .9rem;
-        text-transform: uppercase;
         writing-mode: unset;
         transform: rotate(0);
-        color: #D2DBDB;
+        
     }
 
     .homePage {
         display: unset;
-        min-height: 100vh;
-        height: 100%;
     }
 
-
     .nameBar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+
+        border-right: unset;
         border-bottom: solid;
-        border-color: #221F26;
         border-width: 1px;
-        background-color: #6E888B;
         width: 100vw;
         height: 35px;
         filter: drop-shadow(0px 7px 3px #B0B7B7);
@@ -210,14 +196,15 @@ img.HB {
 
     .sideBar {
 
-        display: unset;
-        border-right: solid;
-        border-color: #221F26;
-        border-width: 1px;
+        display: block;
         max-width: unset;
-        min-width: unset;
+        min-width: 240px;
         width: 100vw;
-        min-height: 100vh;
+        min-height: unset;
+        height: 100px;
+ position: fixed;
+ z-index: 10;
+
     }
 
     .h2name {
@@ -226,20 +213,141 @@ img.HB {
 
     img.logo {
         width: 42px;
-    
+        padding-left: 10px;
+
+    }
+
+    .software {
+        display: none;
+    }
+
+    .sideContent {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        border: unset;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+
+
+    }
+
+    .logo {
+
+        width: unset;
+        display: inline-block;
+        align-content: unset;
+
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        width: 100vw;
+        align-items: flex-end;
+
+    }
+
+    a.text {
+        line-height: 2rem;
+
+    }
+
+    .rightBar {
+
+        display:block;
+        position: relative;
+        top: 100px;
+        padding-bottom: 120px;
+
+    }
+
+    .row {
+        justify-content: space-evenly;
+        margin-top: unset;
+        width: 100%;
+
+
+    }
+
+    img.HB {
+        max-width: unset;
+        width: 45vw;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    img.SL {
+        padding-right: 5px;
+        width:2rem;
+    }
+
+    .desktopHP{
+        display: none;
+    }
+    .mobileHP{
+        display: unset;
+    }
+    .AL{
+        width:2rem;
+    }
+
+    .logogroup {
+        width: 100vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .bottombar{
+ 
+        position: fixed;
+        border-top: #221F26;
+        border-top: solid;
+        border-top-width: 1px;
+        left:0px;
+        bottom: 0px;
+        width: 100vw;
+        background-color: #D2DBDB;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sideTextBE{
+        padding-left: 4vw;
+        width: 42vw;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 389px) {
+    img.HB {
+        max-width: unset;
+        width: 90vw;
+        padding-top: 0px;
+        padding-left: 5vw;
+        padding-right:5vw;
+    }
+    .row{
+        flex-direction: column;
     }
 }
 
 
 
-
-
-
 /*
-Min-width: 320px (smaller phone viewpoints)
-Min-width: 480px (small devices and most phones)
+Min-width: 320px (smaller phone viewpoints) on side
+Min-width: 480px (small devices and most phones) onside
+
 Min-width: 768px (most tablets)
+
 Min-width: 992px (smaller desktop viewpoints)
 Min-width: 1200px (large devices and wide screens)
-
 */
