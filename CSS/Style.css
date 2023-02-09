@@ -160,10 +160,11 @@ img.HB {
     padding-left: 5px;
 }
 
-.desktopHP{
+.desktopHP {
     display: unset;
 }
-.mobileHP{
+
+.mobileHP {
     display: none;
 }
 
@@ -177,7 +178,7 @@ img.HB {
         font-size: 1rem;
         writing-mode: unset;
         transform: rotate(0);
-        
+
     }
 
     .homePage {
@@ -202,8 +203,8 @@ img.HB {
         width: 100vw;
         min-height: unset;
         height: 100px;
- position: fixed;
- z-index: 10;
+        position: fixed;
+        z-index: 10;
 
     }
 
@@ -245,10 +246,14 @@ img.HB {
         flex-direction: column;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-right: 10px;
+        padding-right: 25px;
         width: 100vw;
         align-items: flex-end;
 
+    }
+
+    .SocialLink {
+        padding-right: 20px;
     }
 
     a.text {
@@ -258,7 +263,7 @@ img.HB {
 
     .rightBar {
 
-        display:block;
+        display: block;
         position: relative;
         top: 100px;
 
@@ -267,31 +272,33 @@ img.HB {
     .row {
         justify-content: space-evenly;
         margin-top: unset;
-        width: 100%;
+        width: 100vw;
 
 
     }
 
     img.HB {
-        max-width: unset;
-        width: 45vw;
+        max-width: 400px;
+        width: 40vw;
         padding-top: 0px;
         padding-left: 0px;
     }
 
     img.SL {
         padding-right: 5px;
-        width:2rem;
+        width: 2rem;
     }
 
-    .desktopHP{
+    .desktopHP {
         display: none;
     }
-    .mobileHP{
+
+    .mobileHP {
         display: unset;
     }
-    .AL{
-        width:2rem;
+
+    .AL {
+        width: 2rem;
     }
 
     .logogroup {
@@ -301,31 +308,33 @@ img.HB {
         padding-left: 0px;
         padding-right: 0px;
     }
-    .bottombar{
- 
+
+    .bottombar {
+
         border-top: #221F26;
         border-top: solid;
         border-top-width: 1px;
-        left:0px;
+        left: 0px;
         width: 100vw;
         background-color: #D2DBDB;
-        height:5vh
+        height: 5vh
     }
 
-    .sideTextBE{
+    .sideTextBE {
         padding-left: 4vw;
-        width: 42vw;
+        width: 90%;
+        max-width: 650px;
     }
 
 }
 
 @media only screen and (max-width: 650px) {
-.sideTextBE{
-    padding-left: 5vw;
-    padding-right: 5vw;
-    width: unset;
+    .sideTextBE {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        width: unset;
 
-}
+    }
 }
 
 
@@ -335,12 +344,15 @@ img.HB {
         width: 90vw;
         padding-top: 0px;
         padding-left: 5vw;
-        padding-right:5vw;
+        padding-right: 5vw;
     }
-    .row{
+
+    .row {
         flex-direction: column;
     }
 }
+
+
 
 
 
