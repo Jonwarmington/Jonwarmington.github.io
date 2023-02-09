@@ -321,17 +321,16 @@ img.HB {
     }
 
     .sideTextBE {
-        padding-left: 4vw;
+        padding-left: 10vw;
         width: 90%;
-        max-width: 650px;
+        max-width: 600px;
     }
 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 730px) {
     .sideTextBE {
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-right: 10vw;
         width: unset;
 
     }
@@ -339,6 +338,12 @@ img.HB {
 
 
 @media only screen and (max-width: 389px) {
+    .sideTextBE {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        width: unset;
+
+    }
     img.HB {
         max-width: unset;
         width: 90vw;
