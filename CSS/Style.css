@@ -261,7 +261,6 @@ img.HB {
         display:block;
         position: relative;
         top: 100px;
-        padding-bottom: 120px;
 
     }
 
@@ -304,18 +303,13 @@ img.HB {
     }
     .bottombar{
  
-        position: fixed;
         border-top: #221F26;
         border-top: solid;
         border-top-width: 1px;
         left:0px;
-        bottom: 0px;
         width: 100vw;
         background-color: #D2DBDB;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        height:5vh
     }
 
     .sideTextBE{
@@ -353,9 +347,7 @@ img.HB {
 /*
 Min-width: 320px (smaller phone viewpoints) on side
 Min-width: 480px (small devices and most phones) onside
-
 Min-width: 768px (most tablets)
-
 Min-width: 992px (smaller desktop viewpoints)
 Min-width: 1200px (large devices and wide screens)
 */
