@@ -323,7 +323,15 @@ img.HB {
         width: 42vw;
     }
 
+}
 
+@media only screen and (max-width: 650px) {
+.sideTextBE{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: unset;
+
+}
 }
 
 
