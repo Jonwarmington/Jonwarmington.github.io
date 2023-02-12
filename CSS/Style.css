@@ -168,7 +168,102 @@ img.HB {
     display: none;
 }
 
+/*project pages*/
 
+.HomeButton{
+    z-index: 11;
+    position: fixed;
+    left: 10px;
+    top:-2px;
+    border: #221F26;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #D2DBDB;
+    padding-left: 10px;
+    padding-right: 8px;
+    padding-bottom: -2px;
+}
+
+.HomeB{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+a:link.HBrollover{
+    
+    text-decoration:none;
+}
+
+.sideBar_Project{
+    border-color: #221F26;
+    border-width: 1px;
+    display: block;
+    max-width: unset;
+    min-width: 240px;
+    width: 100vw;
+    min-height: unset;
+    height: 100px;
+    position: fixed;
+    z-index: 10;
+
+}
+.h1Project{
+        font-size: 1rem;
+        writing-mode: unset;
+        transform: rotate(0);
+}
+
+.nameBar_Project{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-color: #221F26;
+    background-color: #6E888B;
+    border-right: unset;
+    border-bottom: solid;
+    border-width: 1px;
+    width: 100vw;
+    height: 35px;
+    filter: drop-shadow(0px 7px 3px #B0B7B7);
+}
+
+
+.sideContent_Project{
+
+    background-color: #D2DBDB;
+    display: flex;
+    align-items: center;
+    border: unset;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+img.logo_Project {
+    width: 42px;
+    padding-left: 16px;
+}
+
+.link_Project {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    width: 100vw;
+    align-items: flex-end;
+
+}
+
+.logo_Project {
+
+    width: unset;
+    display: inline-block;
+    align-content: unset;
+
+}
 
 @media only screen and (max-width: 1330px) {
 
@@ -205,7 +300,6 @@ img.HB {
         height: 100px;
         position: fixed;
         z-index: 10;
-
     }
 
     .h2name {
@@ -214,9 +308,10 @@ img.HB {
 
     img.logo {
         width: 42px;
-        padding-left: 10px;
+        padding-left: 16px;
+}
 
-    }
+    
 
     .software {
         display: none;
