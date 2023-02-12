@@ -450,6 +450,25 @@ img.logo_Project {
     .row {
         flex-direction: column;
     }
+
+
+
+    .HomeButton{
+  
+        left: -1px;
+        top:-1px;
+padding-top: 7px;
+        padding-left: 10px;
+        padding-right: 8px;
+        padding-bottom: 6px;
+    }
+    .HomeB{
+
+        font-size: 0.6rem;
+        letter-spacing: .2rem;
+
+    }
+
 }
 
 
