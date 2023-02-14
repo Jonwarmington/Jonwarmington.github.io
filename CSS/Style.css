@@ -170,6 +170,11 @@ img.HB {
 
 /*project pages*/
 
+.ProjectPage {
+    min-height: 100vh;
+    height: 100%;
+}
+
 .HomeButton{
     z-index: 11;
     position: fixed;
@@ -214,6 +219,14 @@ a:link.HBrollover{
         font-size: 1rem;
         writing-mode: unset;
         transform: rotate(0);
+}
+
+.h1Projectsub{
+    font-size: 1.2rem;
+    writing-mode: unset;
+    transform: rotate(0);
+    color:#6E888B
+
 }
 
 .nameBar_Project{
@@ -264,6 +277,165 @@ img.logo_Project {
     align-content: unset;
 
 }
+
+.bottombarSub {
+
+    border-top: #221F26;
+    border-top: solid;
+    border-top-width: 1px;
+    left: 0px;
+    width: 100vw;
+    background-color: #D2DBDB;
+    height: 5vh;
+}
+
+.Cover{
+    width:100vw;
+    position: sticky;
+    top: 100px;
+    z-index: 0;
+}
+
+.MidProjectPage{
+    width:100vw;
+    background-color: #F6F6F6;
+    position:relative;
+    top: 12vh;
+    z-index: 1;
+}
+
+.projectInformation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+.BoxLeft{
+
+
+    padding: 50px;
+    padding-bottom: 50px;
+    width:80vw;
+    max-width: 600px;
+}
+
+.BoxRight{
+    padding: 50px;
+    padding-bottom: 50px;
+    max-width: 600px;
+}
+
+.Projectdetails{
+    border-top:#221F26;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.BackgroundImage{
+    width: 80vw;
+    max-width: max-content;
+}
+
+/*Slide show*/
+
+.slideholder{
+padding-top: 50px;
+left: 0px;
+width: 100vw;
+background-color: #6E888B;
+padding-bottom: 10px;
+position:unset;
+z-index: 2;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 80vw;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: block;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .caption {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 15px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 @media only screen and (max-width: 1330px) {
 
@@ -415,6 +587,8 @@ img.logo_Project {
         height: 5vh
     }
 
+
+
     .sideTextBE {
         padding-left: 10vw;
         width: 90%;
@@ -422,6 +596,25 @@ img.logo_Project {
     }
 
 }
+
+@media only screen and (max-width: 1220px) {
+    .BoxLeft{
+        padding-bottom: 0px;
+    }
+    .BoxRight{
+        padding-top: 0px;
+    }
+
+.projectInformation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: space-around;
+}
+}
+
 
 @media only screen and (max-width: 730px) {
     .sideTextBE {
@@ -469,6 +662,19 @@ padding-top: 7px;
 
     }
 
+}
+@media only screen and (max-width: 333px) {
+    h1 {
+        font-size: 0.6rem;
+        letter-spacing: .7rem;
+        padding-left: 40px;
+    }
+
+    .h1Project{
+        font-size: 0.6rem;
+        letter-spacing: .7rem;
+        padding-left: 40px;
+    }
 }
 
 
