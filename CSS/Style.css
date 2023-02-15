@@ -18,17 +18,17 @@ h1 {
 h2 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    letter-spacing: .9rem;
+    letter-spacing: .3rem;
     text-transform: uppercase;
     line-height: 3rem
 }
 
 h3 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    letter-spacing: .9rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    line-height: 2rem
+    line-height: 1.5rem;
+    letter-spacing: .3rem;
 }
 
 h5 {
@@ -40,19 +40,19 @@ h5 {
     text-align: right;
 }
 
+p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
 .ul {
     list-style-type: square;
 }
 
-.projectinfo {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 
-    color: #6E888B
-}
 
 a.text {
-    font-size: 1rem;
-    line-height: 3rem;
     color: #B75E28;
 }
 
@@ -83,7 +83,8 @@ a:hover {
 }
 
 .sideContent {
-    padding: 35px;
+    padding: 1.4rem;
+    padding-right: 0;
     padding-bottom: 0px;
     background-color: #D2DBDB;
 }
@@ -159,7 +160,7 @@ a:hover {
 
 .SocialLink {
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -205,23 +206,24 @@ img.HB {
 .HomeButton {
     z-index: 11;
     position: fixed;
-    left: 10px;
-    top: -2px;
+    width:100vw;
+    bottom: -1px;
     border: #221F26;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
+    border-top-width: 1px;
+    
     background-color: #D2DBDB;
-    padding-left: 10px;
-    padding-right: 8px;
-    padding-bottom: -2px;
+
 }
 
 .HomeB {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: .3rem;
     text-transform: uppercase;
     line-height: 2rem;
+    text-align: center;
 }
 
 a:link.HBrollover {
@@ -247,13 +249,22 @@ a:link.HBrollover {
     font-size: 1rem;
     writing-mode: unset;
     transform: rotate(0);
+
+}
+
+.projectinfo {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+font-size: 0.8rem;
+    color: #6E888B
 }
 
 .h1Projectsub {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
     writing-mode: unset;
     transform: rotate(0);
-    color: #6E888B
+    color: #6E888B;
+    letter-spacing: .3rem;
+
 }
 
 .nameBar_Project {
@@ -337,21 +348,23 @@ img.logo_Project {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+    padding-top: 2rem;
 
 }
 
 .BoxLeft {
 
 
-    padding: 50px;
+    
     padding-bottom: 50px;
     width: 80vw;
     max-width: 550px;
 }
 
 .BoxRight {
-    padding: 50px;
+    
     padding-bottom: 50px;
+    width: 80vw;
     max-width: 550px;
 }
 
@@ -478,11 +491,11 @@ img.logo_Project {
 
 .Videoholder {
     display: flex;
-    padding-top: 10px;
+    padding-top: 2rem;
     left: 0px;
     width: 100vw;
     background-color: #F6F6F6;
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
     position: unset;
     z-index: 2;
     flex-direction: row;
@@ -598,7 +611,7 @@ img.logo_Project {
     }
 
     a.text {
-        line-height: 2rem;
+        line-height: 1rem;
 
     }
 
@@ -666,7 +679,7 @@ img.logo_Project {
     .sideTextBE {
         padding-left: 10vw;
         width: 90%;
-        max-width: 600px;
+        max-width: 500px;
     }
 
 }
@@ -700,7 +713,7 @@ img.logo_Project {
 }
 
 
-@media only screen and (max-width: 389px) {
+@media only screen and (max-width: 430px) {
     .sideTextBE {
         padding-left: 5vw;
         padding-right: 5vw;
@@ -722,15 +735,7 @@ img.logo_Project {
 
 
 
-    .HomeButton {
 
-        left: -1px;
-        top: -1px;
-        padding-top: 7px;
-        padding-left: 10px;
-        padding-right: 8px;
-        padding-bottom: 6px;
-    }
 
     .HomeB {
 
@@ -738,21 +743,31 @@ img.logo_Project {
         letter-spacing: .2rem;
 
     }
-
-}
-
-@media only screen and (max-width: 333px) {
     h1 {
         font-size: 0.6rem;
         letter-spacing: .7rem;
-        padding-left: 40px;
     }
 
     .h1Project {
         font-size: 0.6rem;
         letter-spacing: .7rem;
-        padding-left: 40px;
+        text-align: center;
     }
+
+    h3{
+        font-size: 0.7rem;
+    }
+h2{
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
 }
 
 
