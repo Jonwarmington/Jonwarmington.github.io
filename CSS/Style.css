@@ -584,6 +584,48 @@ padding:1.5rem;
     border-right-width: 0px;
     padding-bottom: 1.5rem;
 }
+
+/* support pages */
+
+.MidsupportPage{
+    display: flex;
+    width: 100vw;
+    background-color: #F6F6F6;
+    position: relative;
+    top: 120px;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Supportbox{
+
+}
+
+.imageboxsupport{
+border:#221F26;
+border-style: solid;
+border-width: 1px;
+}
+
+.infoboxsupport{
+    margin-top: 2rem;
+width:440px;
+height:400px;
+background-color: #6E888B;
+}
+
+.myboxsupport{
+    margin-top: 2rem;
+width:440px;
+height:150px;
+background-color: #6E888B;
+}
+
+
+
+
 @media only screen and (max-width: 1643px) {
     .MidCVPage{
         
