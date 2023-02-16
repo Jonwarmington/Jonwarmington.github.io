@@ -46,8 +46,14 @@ p{
     font-size: 1rem;
 }
 
+li{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
 .ul {
-    list-style-type: square;
+    list-style-type:square;
 }
 
 
@@ -384,11 +390,26 @@ img.logo_Project {
     width: 80vw;
     max-width: max-content;
 }
+.AWtextbox{
+    padding:1rem;
+padding-left: 10vw;
+padding-right: 10vw;
+}
 
 /*Slide show*/
 
 .slideholder {
     padding-top: 50px;
+    left: 0px;
+    width: 100vw;
+    background-color: #6E888B;
+    padding-bottom: 10px;
+    position: unset;
+    z-index: 2;
+}
+
+
+.slideholderAW {
     left: 0px;
     width: 100vw;
     background-color: #6E888B;
@@ -443,7 +464,7 @@ img.logo_Project {
 .caption {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #D2DBDB;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding-top: 3px;
     display: flex;
     flex-direction: row-reverse;
@@ -522,6 +543,56 @@ img.logo_Project {
     width: 100%;
     height:80%
 }
+
+/*CV PAGE*/
+
+.MidCVPage{
+    display: flex;
+    width: 100vw;
+    background-color: #F6F6F6;
+    position: relative;
+    top: 2rem;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.CVbox{
+max-width: 500px;
+padding:1.5rem;
+}
+
+.contactCVbox{
+    border-top: #221F26;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.SkillsCVbox{
+    padding-top: 1.5rem;
+    border-top: #221F26;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-bottom: 1.5rem;
+}
+@media only screen and (max-width: 1643px) {
+    .MidCVPage{
+        
+        justify-content:flex-start;
+        padding-left:30px;
+    }
+}
+
+
 
 
 @media only screen and (max-width: 1330px) {
@@ -703,6 +774,20 @@ img.logo_Project {
     }
 }
 
+@media only screen and (max-width: 1095px) {
+
+
+
+
+.contactCVbox{
+    border-top-width: 0px;
+}
+
+.CVbox{
+    padding-bottom: 0px;
+}
+}
+
 
 @media only screen and (max-width: 730px) {
     .sideTextBE {
@@ -710,7 +795,19 @@ img.logo_Project {
         width: unset;
 
     }
+    .MidCVPage{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        padding-left: 0px
 }
+
+
+
+}
+
+
 
 
 @media only screen and (max-width: 430px) {
