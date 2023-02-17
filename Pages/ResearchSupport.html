@@ -19,11 +19,13 @@
                 <h1 class="h1Project">Jon Warmington</h1>
             </div>
 
+
             <div class="sideContent_Project">
                 <div class="logo_Project">
                     <a href="../index.html"><img class="logo_Project" src="../Resources/Logo.png" alt="Logo"
                             width="225"></a>
                 </div>
+
 
                 <div class="link_Project">
                     <h3><a class="text" href="mailto:j_l_warmington@hotmail.com">Email me</a></h3>
@@ -39,52 +41,108 @@
 
         </div>
 
-        
+
 
         <div class="MidsupportPage">
 
+            <div class="Sbox">
+
+                <h2>Research Projects</h2>
+                <p> I have supported academic staff in various research projects, and the following are some highlighted
+                    projects that I have worked on
+                </p>
+
+            </div>
+
+
             <div class="Supportbox">
-                <div class="imageboxsupport">
-                    <img src="../Resources/Logo.png" alt="Logo" width="440" height="250">
+
+                <img class="imageboxsupport" src="../Resources/CoverImage/ColinCover.jpg" alt="Logo" width="440">
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Research Project Name</h3>
+                        <h5>year 2017</h5>
+                        <p>
+                            <br>
+                            Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July: 2002)
+                        </p>
+                    </div>
                 </div>
                 <div class="infoboxsupport">
-
-                </div>
-                <div class="myboxsupport">
-
+                    <div class="Supporttextbox">
+                        <h3>Support given NAME</h3>
+                        <p>
+                            <br>
+                            Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July: 2002)
+                        </p>
+                    </div>
                 </div>
             </div>
+
+
+
+
+
+
+
             <div class="Supportbox">
-                <div class="imageboxsupport">
-                    <img src="../Resources/Logo.png" alt="Logo" width="440" height="250">
+
+                <img class="imageboxsupport" src="../Resources/CoverImage/ColinCover.jpg" alt="Logo" width="440">
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Research Project Name</h3>
+                        <h5>year 2017</h5>
+                        <p>
+                            <br>
+                            Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July: 2002)
+                        </p>
+                    </div>
                 </div>
                 <div class="infoboxsupport">
-
-                </div>
-                <div class="myboxsupport">
-
+                    <div class="Supporttextbox">
+                        <h3>Support</h3>
+                        <p>
+                            <br>
+                            Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July: 2002)
+                        </p>
+                    </div>
                 </div>
             </div>
+
+
             <div class="Supportbox">
-                <div class="imageboxsupport">
-                    <img src="../Resources/Logo.png" alt="Logo" width="440" height="250">
+
+                <img class="imageboxsupport" src="../Resources/CoverImage/ColinCover.jpg" alt="Logo" width="440">
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Research Project Name</h3>
+                        <h5>year 2017</h5>
+                        <p>
+                            <br>
+                            Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July:
+                            2002)Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July: 2002)
+                        </p>
+                    </div>
                 </div>
                 <div class="infoboxsupport">
-
-                </div>
-                <div class="myboxsupport">
-
-                </div>
-            </div>
-            <div class="Supportbox">
-                <div class="imageboxsupport">
-                    <img src="../Resources/Logo.png" alt="Logo" width="440" height="250">
-                </div>
-                <div class="infoboxsupport">
-
-                </div>
-                <div class="myboxsupport">
-
+                    <div class="Supporttextbox">
+                        <h3>Support given NAME</h3>
+                        <p>
+                            <br>
+                            Bachelor of Arts in Multimedia Design and Digital Animation. (Sept: 1999 - July: 2002)
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,7 +161,34 @@
 
 
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 
 </body>

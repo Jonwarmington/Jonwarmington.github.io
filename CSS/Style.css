@@ -40,20 +40,20 @@ h5 {
     text-align: right;
 }
 
-p{
+p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 1.5rem;
     font-size: 1rem;
 }
 
-li{
+li {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 1.5rem;
     font-size: 1rem;
 }
 
 .ul {
-    list-style-type:square;
+    list-style-type: square;
 }
 
 
@@ -64,6 +64,12 @@ a.text {
 
 a:hover {
     filter: drop-shadow(0px 0px 3px #889191);
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #B75E28;
 }
 
 .homePage {
@@ -132,6 +138,7 @@ a:hover {
 
 }
 
+
 .logogroup {
     width: 298px;
     margin-top: 15px;
@@ -143,6 +150,19 @@ a:hover {
     padding-right: 5px;
     justify-content: space-around;
 }
+
+
+.logogroup2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 .rightBar {
 
@@ -212,13 +232,13 @@ img.HB {
 .HomeButton {
     z-index: 11;
     position: fixed;
-    width:100vw;
+    width: 100vw;
     bottom: -1px;
     border: #221F26;
     border-style: solid;
     border-width: 0px;
     border-top-width: 1px;
-    
+
     background-color: #D2DBDB;
 
 }
@@ -260,12 +280,12 @@ a:link.HBrollover {
 
 .projectinfo {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-font-size: 0.8rem;
+    font-size: 0.8rem;
     color: #6E888B
 }
 
 .h1Projectsub {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
     writing-mode: unset;
     transform: rotate(0);
     color: #6E888B;
@@ -361,14 +381,14 @@ img.logo_Project {
 .BoxLeft {
 
 
-    
+
     padding-bottom: 50px;
     width: 80vw;
     max-width: 550px;
 }
 
 .BoxRight {
-    
+
     padding-bottom: 50px;
     width: 80vw;
     max-width: 550px;
@@ -390,10 +410,11 @@ img.logo_Project {
     width: 80vw;
     max-width: max-content;
 }
-.AWtextbox{
-    padding:1rem;
-padding-left: 10vw;
-padding-right: 10vw;
+
+.AWtextbox {
+    padding: 1rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 /*Slide show*/
@@ -527,7 +548,7 @@ padding-right: 10vw;
 
 .video {
 
-    
+
     position: relative;
     padding-bottom: calc(56.25% * 0.75);
     /* 16:9 */
@@ -541,12 +562,12 @@ padding-right: 10vw;
     top: 0;
     left: 0;
     width: 100%;
-    height:80%
+    height: 80%
 }
 
 /*CV PAGE*/
 
-.MidCVPage{
+.MidCVPage {
     display: flex;
     width: 100vw;
     background-color: #F6F6F6;
@@ -558,12 +579,12 @@ padding-right: 10vw;
     justify-content: space-around;
 }
 
-.CVbox{
-max-width: 500px;
-padding:1.5rem;
+.CVbox {
+    max-width: 500px;
+    padding: 1.5rem;
 }
 
-.contactCVbox{
+.contactCVbox {
     border-top: #221F26;
     border-style: solid;
     border-top-width: 1px;
@@ -574,7 +595,8 @@ padding:1.5rem;
     padding-bottom: 30px;
 
 }
-.SkillsCVbox{
+
+.SkillsCVbox {
     padding-top: 1.5rem;
     border-top: #221F26;
     border-style: solid;
@@ -585,52 +607,74 @@ padding:1.5rem;
     padding-bottom: 1.5rem;
 }
 
+.Videoholder2 {
+    display: flex;
+    padding-top: 4rem;
+    width: 120rem;
+    max-width: 650px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 /* support pages */
 
-.MidsupportPage{
-    display: flex;
+.Sbox {
+    max-width: 500px;
+    padding: 1.5rem;
+    padding-top: 0px;
+}
+
+.MidsupportPage {
     width: 100vw;
-    background-color: #F6F6F6;
     position: relative;
-    top: 120px;
-    z-index: 1;
+    top: 8rem;
+}
+
+.Supportbox {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 20px;
+    justify-content: flex-start;
 }
 
-.Supportbox{
-
+.imageboxsupport {
+    width: 30vw;
+    height: auto;
+    max-width: 440px;
+    border: #221F26;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
 }
 
-.imageboxsupport{
-border:#221F26;
-border-style: solid;
-border-width: 1px;
+.infoboxsupport {
+    margin-left: 30px;
+    width: 440px;
+    min-height: fit-content;
+    background-color: #e2e5e6;
 }
 
-.infoboxsupport{
-    margin-top: 2rem;
-width:440px;
-height:400px;
-background-color: #6E888B;
-}
-
-.myboxsupport{
-    margin-top: 2rem;
-width:440px;
-height:150px;
-background-color: #6E888B;
+.Supporttextbox {
+    padding: 1.5rem;
+    border-top: #221F26;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-bottom: 1.5rem;
 }
 
 
 
 
 @media only screen and (max-width: 1643px) {
-    .MidCVPage{
-        
-        justify-content:flex-start;
-        padding-left:30px;
+    .MidCVPage {
+
+        justify-content: flex-start;
+        padding-left: 30px;
     }
 }
 
@@ -795,6 +839,44 @@ background-color: #6E888B;
         max-width: 500px;
     }
 
+    /* support pages */
+
+.Sbox {
+    max-width: 500px;
+    padding: 1.5rem;
+    padding-top: 0px;
+}
+
+
+
+.Supportbox {
+    position: relative;
+    left: -200px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.imageboxsupport {
+    width: 50vw;
+    height: auto;
+    max-width: unset;
+    border: #221F26;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.infoboxsupport {
+    width: 50vw;
+    height: auto;
+    max-width: unset;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+
+
 }
 
 @media only screen and (max-width: 1220px) {
@@ -814,20 +896,43 @@ background-color: #6E888B;
         align-items: flex-start;
         align-content: space-around;
     }
+    .Supportbox {
+        position: unset;
+        left: unset;
+    }
+
+    .imageboxsupport {
+        width: 90vw;
+        max-width: 650px;
+    }
+    
+    .infoboxsupport {
+        width: 90vw;
+        max-width: 650px;
+    }
+
+    .Supporttextbox {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 1095px) {
 
+    
 
+    .contactCVbox {
+        border-top-width: 0px;
+    }
 
+    .CVbox {
+        padding-bottom: 0px;
+    }
 
-.contactCVbox{
-    border-top-width: 0px;
-}
+    .Videoholder2 {
+        display: none;
+    }
 
-.CVbox{
-    padding-bottom: 0px;
-}
 }
 
 
@@ -837,15 +942,16 @@ background-color: #6E888B;
         width: unset;
 
     }
-    .MidCVPage{
+
+    .MidCVPage {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: stretch;
         padding-left: 0px
-}
+    }
 
-
+   
 
 }
 
@@ -882,6 +988,7 @@ background-color: #6E888B;
         letter-spacing: .2rem;
 
     }
+
     h1 {
         font-size: 0.6rem;
         letter-spacing: .7rem;
@@ -893,12 +1000,13 @@ background-color: #6E888B;
         text-align: center;
     }
 
-    h3{
+    h3 {
         font-size: 0.7rem;
     }
-h2{
-    font-size: 0.8rem;
-}
+
+    h2 {
+        font-size: 0.8rem;
+    }
 
 
 
@@ -909,7 +1017,12 @@ h2{
 
 }
 
-
+@media only screen and (max-width: 350px) {
+    h3 {
+        font-size: 0.6rem;
+        letter-spacing: 0.2rem;
+    }
+}
 
 
 
