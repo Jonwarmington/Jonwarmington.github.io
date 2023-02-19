@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/Style.css">
     <link rel="stylesheet" href="../CSS/Reset.css">
     <title>Student Support</title>
+
 </head>
 
 <body>
@@ -34,6 +35,58 @@
 
             </div>
 
+            
+            <div class="Autoslideshow" data-cycle="2000">
+            
+                <div class="mySlides fade">
+                    <img src="https://placeimg.com/320/240/animals">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="https://placeimg.com/320/240/nature">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="https://placeimg.com/320/240/people">
+                </div>
+            
+            </div>
+
+            
+            <div class="Autoslideshow" data-cycle="2000">
+            
+                <div class="mySlides fade">
+                    <img src="https://placeimg.com/320/240/animals">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="https://placeimg.com/320/240/nature">
+                </div>
+            
+            </div>
+
+            <div class="Autoslideshow" data-cycle="2000">
+            
+                <div class="mySlides fade">
+                    <img src="https://placeimg.com/320/240/animals">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="https://placeimg.com/320/240/nature">
+                </div>
+            
+            </div>
+
+        </div>
+
+       
+
+            <div class="HomeButton">
+                <a class="HBrollover" href="../index.html">
+                    <h2 class="HomeB">Return to Home</h2>
+                </a>
+            </div>
+
 
 
 
@@ -42,19 +95,39 @@
 
 
 
+        <script>
+/* Find all slideshow containers */
+var slideshowContainers = document.getElementsByClassName("Autoslideshow");
+/* For each container get starting variables */
+for(let s = 0; s < slideshowContainers.length; s++) {
+    /* Read the new data attribute */        
+    var cycle = slideshowContainers[s].dataset.cycle;
+    /* Find all the child nodes with class mySlides */
+    var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+    var slideIndex = 0;
+    /* Now we can cycle slides, but this recursive function must have parameters */
+    /* slides and cycle never change, those are unique for each slide container */
+    /* slideIndex will increase during each iteration */
+    showSlides(slides, slideIndex, cycle);
+};
 
+/* Function is alsmost same, but now it uses 3 new parameters */
+function showSlides(slides, slideIndex, cycle) {
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    };
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    };
+    slides[slideIndex - 1].style.display = "block";
+    /* Calling same function, but with new parameters and cycle time */
+    setTimeout(function() {
+        showSlides(slides, slideIndex, cycle)
+    }, cycle);
+};
+        </script>
 
-
-    <div class="HomeButton">
-        <a class="HBrollover" href="../index.html">
-            <h2 class="HomeB">Return to Home</h2>
-        </a>
-    </div>
-
-
-
-
-    </div>
 
 
 
