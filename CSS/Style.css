@@ -56,7 +56,9 @@ li {
     list-style-type: square;
 }
 
-
+.cell{
+    margin-bottom: 20px;
+}
 
 a.text {
     color: #B75E28;
@@ -640,13 +642,17 @@ img.logo_Project {
 }
 
 .imageboxsupport {
+    display: flex;
     width: 30vw;
     height: auto;
     max-width: 440px;
-    border: #221F26;
-    border-style: solid;
+    justify-content:left;
     border-width: 1px;
     margin-bottom: 20px;
+}
+
+.imagesize{
+    max-width: 400px;
 }
 
 .infoboxsupport {
@@ -680,8 +686,6 @@ img {
 /* Slideshow container */
 .Autoslideshow {
     max-width: 320px;
-    position: relative;
-    margin: auto;
 }
 
 
@@ -908,9 +912,7 @@ img {
     width: 50vw;
     height: auto;
     max-width: unset;
-    border: #221F26;
-    border-style: solid;
-    border-width: 1px;
+  margin-left: 50px;
     margin-bottom: 20px;
 }
 
@@ -922,7 +924,9 @@ img {
     margin-bottom: 30px;
 }
 
-
+.imagesize{
+    max-width: 600px;
+}
 
 }
 
@@ -998,11 +1002,17 @@ img {
         padding-left: 0px
     }
 
-   
+   .imagesize{
+    width: 80vw;
+    height:auto;
+   }
+   .imageboxsupport {
+
+  margin-left: unset;
 
 }
 
-
+}
 
 
 @media only screen and (max-width: 430px) {

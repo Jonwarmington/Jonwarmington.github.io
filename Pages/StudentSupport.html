@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../CSS/Style.css">
     <link rel="stylesheet" href="../CSS/Reset.css">
     <title>Student Support</title>
-
 </head>
 
 <body>
@@ -20,11 +19,13 @@
                 <h1 class="h1Project">Jon Warmington</h1>
             </div>
 
+
             <div class="sideContent_Project">
                 <div class="logo_Project">
                     <a href="../index.html"><img class="logo_Project" src="../Resources/Logo.png" alt="Logo"
                             width="225"></a>
                 </div>
+
 
                 <div class="link_Project">
                     <h3><a class="text" href="mailto:j_l_warmington@hotmail.com">Email me</a></h3>
@@ -35,100 +36,399 @@
 
             </div>
 
-            
-            <div class="Autoslideshow" data-cycle="2000">
-            
-                <div class="mySlides fade">
-                    <img src="https://placeimg.com/320/240/animals">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="https://placeimg.com/320/240/nature">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="https://placeimg.com/320/240/people">
-                </div>
-            
-            </div>
-
-            
-            <div class="Autoslideshow" data-cycle="2000">
-            
-                <div class="mySlides fade">
-                    <img src="https://placeimg.com/320/240/animals">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="https://placeimg.com/320/240/nature">
-                </div>
-            
-            </div>
-
-            <div class="Autoslideshow" data-cycle="2000">
-            
-                <div class="mySlides fade">
-                    <img src="https://placeimg.com/320/240/animals">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="https://placeimg.com/320/240/nature">
-                </div>
-            
-            </div>
-
-        </div>
-
-       
-
-            <div class="HomeButton">
-                <a class="HBrollover" href="../index.html">
-                    <h2 class="HomeB">Return to Home</h2>
-                </a>
-            </div>
-
-
-
-
         </div>
 
 
 
+        <div class="MidsupportPage">
 
-        <script>
-/* Find all slideshow containers */
-var slideshowContainers = document.getElementsByClassName("Autoslideshow");
-/* For each container get starting variables */
-for(let s = 0; s < slideshowContainers.length; s++) {
-    /* Read the new data attribute */        
-    var cycle = slideshowContainers[s].dataset.cycle;
-    /* Find all the child nodes with class mySlides */
-    var slides = slideshowContainers[s].querySelectorAll('.mySlides');
-    var slideIndex = 0;
-    /* Now we can cycle slides, but this recursive function must have parameters */
-    /* slides and cycle never change, those are unique for each slide container */
-    /* slideIndex will increase during each iteration */
-    showSlides(slides, slideIndex, cycle);
-};
+            <div class="Sbox">
 
-/* Function is alsmost same, but now it uses 3 new parameters */
-function showSlides(slides, slideIndex, cycle) {
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    };
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    };
-    slides[slideIndex - 1].style.display = "block";
-    /* Calling same function, but with new parameters and cycle time */
-    setTimeout(function() {
-        showSlides(slides, slideIndex, cycle)
-    }, cycle);
-};
-        </script>
+                <h2>Student Projects</h2>
+                <p> I have supported various student-led projects over the years at Bath Spa University, including but
+                    not limited to the following highlighted projects.
+                </p>
+
+            </div>
+
+            <div class="Supportbox">
+
+                <div class="imageboxsupport">
+                    <div class="Autoslideshow" data-cycle="2000">
+
+                        <div class="mySlides fade">
+                            <img src="https://placeimg.com/320/240/animals">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="https://placeimg.com/320/240/nature">
+                        </div>
+                    </div>
 
 
+                </div>
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Degree show</h3>
+                        <h5>year - ongoing</h5>
+                        <p>
+                            <br>
+                            At the end of each academic year, the final year students at Bath Spa University put on an
+                            end-of-year show, which represents the culmination of their studies over the past three
+                            years. As a technican I support this event, my role is quite varied, and I may be called
+                            upon to
+                            assist with a variety of tasks, including working within my area of specialist support, as
+                            well as doing more general tasks like painting walls and hanging artwork. However, the main
+                            focus of my support is typically centered around AV equipment, printing, mounting of prints,
+                            and creating projection spaces. By helping to ensure that the necessary equipment and
+                            facilities are in place, I aim to facilitate a successful and memorable end-of-year show
+                            that truly showcases the hard work and dedication of these talented students.
+                        </p>
+                    </div>
+                </div>
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+
+
+                        <h3>student</h3>
+                        <p class="projectinfo">All students<br><br></p>
+
+                        </p>
+                        <h3>Course </h3>
+                        <p class="projectinfo">Art and Design<br><br></p>
+
+                        </p>
+                        <h3>Title</h3>
+                        <p class="projectinfo">End of year degree show</p>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="Supportbox">
+
+                <div class="imageboxsupport">
+                    <div class="Autoslideshow" data-cycle="2000">
+
+                        <div class="mySlides fade">
+                            <img src="https://placeimg.com/320/240/animals">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="https://placeimg.com/320/240/nature">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>workshop Support</h3>
+                        <h5>year - ongoing</h5>
+                        <p>
+                            <br>
+                            As a workshop technican for moving image at Bath Spa University, I am responsible for
+                            helping students with a wide range of tasks related to productions, from editing films
+                            shot on phones to working with 4K film footage and animation. One of the key aspects of my
+                            role is assessing the skill level of each individual student and adapting quickly to their
+                            needs, providing demonstrations that are tailored to their particular abilities. By
+                            providing this personalized support, I strive to help each student reach their full
+                            potential and succeed in their artistic endeavors.
+                        </p>
+                    </div>
+                </div>
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+
+
+                        <h3>student</h3>
+                        <p class="projectinfo">All students<br><br></p>
+
+                        </p>
+                        <h3>Course </h3>
+                        <p class="projectinfo">Art and Design<br><br></p>
+
+                        </p>
+                        <h3>Title</h3>
+                        <p class="projectinfo">Workshop support in moving image</p>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="Supportbox">
+
+                <div class="imageboxsupport">
+                    <div class="Autoslideshow" data-cycle="2000">
+
+                        <div class="mySlides fade">
+                            <img src="https://placeimg.com/320/240/animals">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="https://placeimg.com/320/240/nature">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Porthleven Prize</h3>
+                        <h5>year - ongoing</h5>
+                        <p>
+                            <br>
+                            Every year, Bath Spa University offers the Porthleven prize to twenty students, giving them
+                            the opportunity to participate in a five-day residency with workshops.
+                            From these twenty students, ten will be selected to undergo a fully-funded twelve-day
+                            residency at the Porthleven Lifeboat Art Studio. As a technician for the university's
+                            students, I have helped by providing assistance in the form of equipment and setup for their
+                            final residency shows. In most cases, this has involved setting up projection equipment, but
+                            the extent of my involvement has varied depending on the needs of the prize winners. By
+                            helping to create an environment in which these students can showcase their talents, I am
+                            proud to contribute to the success of these up-and-coming artists.
+                        </p>
+                    </div>
+                </div>
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+
+
+                        <h3>student</h3>
+                        <p class="projectinfo">Twenty residency students<br><br></p>
+
+                        </p>
+                        <h3>Course </h3>
+                        <p class="projectinfo">All students<br><br></p>
+
+                        </p>
+                        <h3>Title</h3>
+                        <p class="projectinfo">Porthleven Prize</p>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="Supportbox">
+
+                <div class="imageboxsupport">
+                    <iframe class="imagesize" width="640" height="360" src="https://www.youtube.com/embed/eXQPSzY-eY8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+
+
+                </div>
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Phoebe Wolley</h3>
+                        <h5>year 2022</h5>
+                        <p>
+                            <br>
+                            Phoebe, a ceramic artist and dancer, explored the decomposition of unfired ceramic pots for
+                            her final Master of Art piece. Her work was displayed in the Holburne Museum in Bath,
+                            showcasing her unique and innovative approach to ceramic art. In order to support Phoebe's
+                            artistic vision, I provided assistance in a number of ways. Firstly, I helped to set up
+                            lighting and video equipment in the lighting studios, ensuring that her work was presented
+                            in the best possible light. Additionally, I provided support in editing her final piece,
+                            helping her to refine and perfect her vision. Finally, I assisted in setting up the
+                            projection and sound equipment for her final year show, allowing her to fully showcase her
+                            work to a wider audience.
+                        </p>
+                    </div>
+                </div>
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+
+
+                        <h3>student</h3>
+                        <p class="projectinfo">Phoebe Wolley<br><br></p>
+
+                        </p>
+                        <h3>Course </h3>
+                        <p class="projectinfo">MA Fine Art Ceramic<br><br></p>
+
+                        </p>
+                        <h3>Title</h3>
+                        <p class="projectinfo">MA Final Show</p>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="Supportbox">
+
+                <div class="imageboxsupport">
+                    <iframe class="imagesize" src="https://player.vimeo.com/video/456256917?h=15e2ee8ef0" width="640"
+                        height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen></iframe>
+
+
+
+                </div>
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Alyson Minkley</h3>
+                        <h5>year 2020</h5>
+                        <p>
+                            <br>
+                            Datafield is a collaborative and participatory performance artwork designed for video,
+                            created across multiple disciplines. The final cut of the project was shortlisted for the
+                            Visions of Science ArtPrize at The Edge in 2020 and long-listed for UK New Artist in 2022.
+                            The project has been screened at several venues, including Centre of Gravity in Bristol in
+                            2020 and Wiltshire Creative at Salisbury Playhouse in 2021. Despite the challenges posed by
+                            the COVID-19 pandemic, I assisted Alyson by providing support in editing the video footage
+                            into the final piece. Additionally, I helped with the setup of projection and sound
+                            equipment for her final year show, making it possible for her to present her work in the
+                            best possible light.
+                        </p>
+                    </div>
+                </div>
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+
+
+                        <h3>student</h3>
+                        <p class="projectinfo">Alyson Minkley<br><br></p>
+
+                        </p>
+                        <h3>Course </h3>
+                        <p class="projectinfo">MA Fine Art <br><br></p>
+
+                        </p>
+                        <h3>Title</h3>
+                        <p class="projectinfo"> Data Field</p>
+                        <br><br>
+                        </p>
+                        <h3><a class="text" href="https://vimeo.com/456256917">Datafield (4K version)</a></h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="Supportbox">
+
+                <div class="imageboxsupport">
+                    <div class="Autoslideshow" data-cycle="2000">
+
+                        <div class="mySlides fade">
+                            <img class="imagesize" src="../Resources/Slideshow/Student/ben1.jpg">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="imagesize" src="../Resources/Slideshow/Student/ben2.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                            <img class="imagesize" src="../Resources/Slideshow/Student/ben3.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                            <img class="imagesize" src="../Resources/Slideshow/Student/ben4.jpg">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+                        <h3>Ben Jones</h3>
+                        <h5>year 2016</h5>
+                        <p>
+                            <br>
+                            During his time at Bath Spa University, Ben delved into photography as a fine art medium and
+                            created a final piece that focused on scale and photos of the moon's surface. To support his
+                            studies, I aided in the production of his final year project by producing large prints of
+                            his work, which were dry mounted onto aluminum backing boards and hung in a gallery space.
+                            By showcasing his work in this manner, Ben was able to fully express his vision and
+                            demonstrate the potential of photography as a fine art medium.
+                        </p>
+                    </div>
+                </div>
+                <div class="infoboxsupport">
+                    <div class="Supporttextbox">
+
+
+                        <h3>student</h3>
+                        <p class="projectinfo">Ben Jones<br><br></p>
+
+                        </p>
+                        <h3>Course </h3>
+                        <p class="projectinfo">BA Photography<br><br></p>
+
+                        </p>
+                        <h3>Title</h3>
+                        <p class="projectinfo">Degree show</p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="HomeButton">
+            <a class="HBrollover" href="../index.html">
+                <h2 class="HomeB">Return to Home</h2>
+            </a>
+        </div>
+
+
+
+
+    </div>
+    <script>
+        /* Find all slideshow containers */
+        var slideshowContainers = document.getElementsByClassName("Autoslideshow");
+        /* For each container get starting variables */
+        for (let s = 0; s < slideshowContainers.length; s++) {
+            /* Read the new data attribute */
+            var cycle = slideshowContainers[s].dataset.cycle;
+            /* Find all the child nodes with class mySlides */
+            var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+            var slideIndex = 0;
+            /* Now we can cycle slides, but this recursive function must have parameters */
+            /* slides and cycle never change, those are unique for each slide container */
+            /* slideIndex will increase during each iteration */
+            showSlides(slides, slideIndex, cycle);
+        };
+
+        /* Function is alsmost same, but now it uses 3 new parameters */
+        function showSlides(slides, slideIndex, cycle) {
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            };
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            };
+            slides[slideIndex - 1].style.display = "block";
+            /* Calling same function, but with new parameters and cycle time */
+            setTimeout(function () {
+                showSlides(slides, slideIndex, cycle)
+            }, cycle);
+        };
+    </script>
 
 
 </body>
