@@ -548,23 +548,12 @@ img.logo_Project {
     justify-content: space-evenly;
 }
 
-.video {
 
-
-    position: relative;
-    padding-bottom: calc(56.25% * 0.75);
-    /* 16:9 */
-    width: 75%;
-    height: 0;
-    max-width: 650px;
-}
 
 .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%
+  max-width: 500px;
+  max-height: 260px;
+
 }
 
 /*CV PAGE*/
@@ -958,7 +947,7 @@ img {
     }
     
     .infoboxsupport {
-        width: 90vw;
+        width: 90vw; 
         max-width: 650px;
     }
 
@@ -981,9 +970,17 @@ img {
     }
 
     .Videoholder2 {
-        display: none;
+        width:90vw;
     }
 
+    .video{
+        width:85vw;
+    }
+    .video iframe {
+        max-width: 80vw;
+        max-height: 50vw;
+      
+      }
 }
 
 
